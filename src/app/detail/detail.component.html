@@ -1,0 +1,75 @@
+<body>
+    <header>
+        <div class="bg-white p-4 shadow-sm">
+            <div class="container mx-auto flex items-start">
+              <div class="text-2xl font-bold text-red-500">Telkomsel</div>
+            </div>
+          </div>
+    </header>
+    <main class="bg-slate-100">
+        <div class= "pt-6">
+            <div class="back-button mb-3">
+                <button routerLink="/" class="inline-flex">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class=" stroke-gray-400 w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                    </svg>
+                    <p class="ml-2">Kembali</p>
+                </button> 
+            </div>
+            <div class="detail-content">
+                <img class="w-full h-72 object-cover"src="{{dataPaket.urlGambar}}" alt="background"/>
+                <div class="w-full bg-white p-4 shadow-sm">
+                    <h1 class="text-2xl text-blue-950 font-bold">Paket Internet {{dataPaket.namaLayanan}}</h1>
+                    <div class="border-t mt-1 border-gray-400"></div>
+                    <p>{{dataPaket.id}}</p>
+                </div>
+
+                <div class="mt-6 max-w-full bg-white p-4 shadow-sm">
+                    <h1 class="text-2xl text-blue-950 font-bold">Syarat dan Ketentuan</h1>
+                    <div class="border-t mt-1 border-gray-400"></div>
+                  <ul class="list-disc text-slate-500 p-4">
+                    <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, eum!</li>
+                    <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, eum!</li>
+                    <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, eum!</li>
+                  </ul>
+                </div>
+
+                <div class="mt-6 max-w-full bg-white p-4 shadow-sm">
+                    <h2 class="text-2xl text-blue-950 font-bold">Pilih Paket</h2>
+                    <div class="m-4 p-4 bg-white border rounded border-gray-100" >
+                        <div class="flex items-center justify-between">
+                            <label class="label">
+                                <h5 class=" text-blue-900 font-bold">30Days</h5>
+                                <span class="text-red-500 font-semibold">1 ExtraBenefit <s class="text-gray-400">Rp.52000</s></span>
+                            </label>
+                            <label class="relative flex items-center p-3 rounded-full cursor-pointer">
+                              <input name="color" type="radio"
+                                class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-full border border-blue-gray-200 text-blue-900 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-blue-800 checked:before:bg-blue-800 hover:before:opacity-10"
+                                id="black" />
+                              <span
+                                class="absolute text-blue-900 transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 16 16" fill="currentColor">
+                                  <circle data-name="ellipse" cx="8" cy="8" r="8"></circle>
+                                </svg>
+                              </span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="max-w-full bg-white border-t-2 border-gray-200">
+                    <button class="min-w-full bg-red-600 text-white font-semibold text-2xl rounded-full text-sm p-4 my-5 mx-auto">Aktifkan</button>
+                </div>
+
+                
+
+            </div>
+        </div>
+    </main>
+   
+
+    
+    
+    
+</body>
+
